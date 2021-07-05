@@ -1,0 +1,240 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NP</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body></body>
+  <div class="cabinet">
+    <div class="cabinet-wrapper">
+      <div class="cabinet-nav">
+        <div class="cabinet-nav__content">
+          <div class="cabinet-nav__logo"><a href="/"><img src="images/header/logo.png" alt="alt"/></a></div>
+          <ul class="cabinet-nav__menu"> 
+            <li class="cabinet-nav__item cabinet-nav__item_current"><a href="">Кабинет</a></li>
+            <li class="cabinet-nav__item"> <a href="">Уроки</a></li>
+            <li class="cabinet-nav__item"> <a href="">Тренировки</a></li>
+            <li class="cabinet-nav__item"> <a href="">Таблица рейтинга</a></li>
+            <li class="cabinet-nav__item"> <a href="">Пробное ЕГЭ</a></li>
+            <li class="cabinet-nav__item"> <a href="">Настройки</a></li>
+            <li class="cabinet-nav__item"> <a href="">Оплата курсов</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cabinet-main">
+        <header class="cabinet-header">
+          <div class="cabinet-header__payment">
+            <div class="cabinet-header__payment-select">
+              <select name=""> 
+                <option value="Математика">Математика </option>
+                <option value="Математика">Математика </option>
+                <option value="Математика">Математика </option>
+              </select>
+            </div>
+            <button class="cabinet-header__payment-button">Оплатить</button>
+          </div>
+          <div class="cabinet-header__account">
+            <div class="cabinet-header__account-notifications"><a href="#"><span class="ring"><img src="images/header/ring.svg" alt="alt"/></span><span class="text">99+</span></a></div>
+            <div class="cabinet-header__account-profile"> <a class="avatar" href="#"> <img src="images/header/default-avatar.png" alt="alt"/></a><a class="exit" href="#">Выйти</a></div>
+          </div>
+        </header>
+        <div class="cabinet-content">
+          <div class="cabinet-content__top">
+            <div class="cabinet-content__top-user"><a class="link" href="#"><span class="avatar"><img src="images/header/default-avatar.png" alt="alt"/></span><span>Привет, Кристина</span></a></div>
+            <div class="cabinet-content__top-result"> 
+              <div class="tasks performed">Правильно выполненные задания: <span>25</span></div>
+              <div class="tasks not-performed">Не выполненные задания: <span>4</span></div>
+            </div>
+          </div>
+          <div class="cabinet-content__status">
+            <div class="cabinet-content__status-bugs">
+              <div class="cabinet-content__status-text">
+                <div class="cabinet__block-title">Работа над ошибками</div>
+                <div class="available">0 доступных для исправления</div>
+                <p>Все ошибки, которые вы совершаете при выполнении заданий запоминаются. В данной тренировке вы можете их справить.</p>
+              </div><a class="cabinet__btn" href="#">Тренироваться</a>
+            </div>
+            <div class="cabinet-content__status-statistics">
+              <div class="cabinet__block-title">Ваша статистика</div>
+              <div class="cabinet-content__status-statistics-info">
+                <div class="period"> <span class="period__date">
+                    <input type="date" value="2021-07-01"/></span><b>-</b><span class="period__date">
+                    <input type="date" value="2021-07-01"/></span></div>
+                <div class="prompt"> <span class="prompt__done">правильные ответы</span><span class="prompt__wrong">неправильные ответы</span></div>
+              </div>
+              <div class="cabinet-content__status-statistics-diagram"><img src="images/cabinet/statistics.png" alt="alt"/></div>
+            </div>
+            <div class="cabinet-content__status-raiting">	
+              <div class="cabinet__block-title">Таблица рейтинга</div>
+              <div class="position">Твоя позиция: <b>2536</b></div>
+              <ul class="raiting">	
+                <li> 
+                  <div><span class="name">1.Мартынова Александра</span><b>51706</b></div>
+                </li>
+                <li> 
+                  <div><span class="name">1.Мартынова Александра</span><b>51706</b></div>
+                </li>
+                <li class="raiting-current">
+                  <div><span class="name">1.Мартынова Александра</span><b>51706</b></div>
+                </li>
+                <li> 
+                  <div><span class="name">1.Мартынова Александра</span><b>51706</b></div>
+                </li>
+                <li> 
+                  <div><span class="name">1.Мартынова Александра</span><b>51706</b></div>
+                </li>
+              </ul>
+              <div class="link"><a href="#">Перейти к таблице</a></div>
+            </div>
+          </div>
+          <div class="cabinet-content__sections"> 
+            <div class="cabinet-content__sections-title">
+              <h2 class="cabinet__title">Выбери раздел</h2><a href="#">Посмотреть историю занятий</a>
+            </div>
+            <div class="cabinet-content__sections-slider" id="sectionsSlider">	
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#">
+                  <div class="cabinet__block-title">Раздел 1. Основы</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="30" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 1. Основы</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="30" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 2. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="80" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 3. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="10" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 4. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="30" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 1. Основы</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="30" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 2. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="80" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 3. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="10" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 4. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="30" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 1. Основы</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="30" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 2. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="80" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 3. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="10" max="100"></progress></a></div>
+              <div class="sections-slider-item"> <a class="sections-slider-item__container" href="#"> 
+                  <div class="cabinet__block-title">Раздел 4. Формулы сокращенного умножения</div>
+                  <div class="sections-slider-item__reults"> 
+                    <div class="top"> <span>Выполненных упражнений: </span><span>5 из 5</span></div>
+                    <div class="bottom"><span>Оценка за итоговую работу: </span><span>5+</span></div>
+                  </div>
+                  <progress class="progress" value="30" max="100"></progress></a></div>
+            </div>
+          </div>
+          <div class="cabinet-content__await">	
+            <h2 class="cabinet__title">Предстоящие занятия</h2>
+            <div class="cabinet-content__await-item"> 
+              <div class="name"> 
+                <div class="name__title">1-21. Текстовые задачи №2 </div>
+                <div class="name__start">Начало: <span>cегодня в 15:00</span></div>
+              </div>
+              <div class="info">Задание ЕГЭ №11. Средняя скорость. Движение по прямой. Движение по воде. Движение по кругу.</div>
+              <div class="btn"><a class="site-btn" href="#">Принять участие</a></div>
+            </div>
+            <div class="cabinet-content__await-item"> 
+              <div class="name"> 
+                <div class="name__title">1-21. Текстовые задачи №2 </div>
+                <div class="name__start">Начало: <span>cегодня в 15:00</span></div>
+              </div>
+              <div class="info">Задание ЕГЭ №11. Средняя скорость. Движение по прямой. Движение по воде. Движение по кругу.</div>
+              <div class="btn"><a class="site-btn" href="#">Принять участие</a></div>
+            </div>
+            <div class="cabinet-content__await-item"> 
+              <div class="name"> 
+                <div class="name__title">1-21. Текстовые задачи №2 </div>
+                <div class="name__start">Начало: <span>cегодня в 15:00</span></div>
+              </div>
+              <div class="info">Задание ЕГЭ №11. Средняя скорость. Движение по прямой. Движение по воде. Движение по кругу.</div>
+              <div class="btn"><a class="site-btn" href="#">Принять участие</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="cabinet-footer">
+          <div class="cabinet-footer__phones">	<a href="tel:+79299713718">+7 (929) 971-37-18</a><a href="tel:+79299713718">+7 (929) 971-37-18</a></div>
+          <ul class="cabinet-footer__nav"> 
+            <li class="cabinet-footer__nav-item"><a href="">Cвязаться с преподавателем</a></li>
+            <li class="cabinet-footer__nav-item"><a href="">Договор оферты</a></li>
+            <li class="cabinet-footer__nav-item"><a href="">Политика конфиденциальности</a></li>
+          </ul>
+          <ul class="cabinet-footer__social">
+            <li class="cabinet-footer__social-item"><a href=""> <img src="images/footer/telegram.svg" alt="alt"/></a></li>
+            <li class="cabinet-footer__social-item"><a href=""> <img src="images/footer/insta.svg" alt="alt"/></a></li>
+            <li class="cabinet-footer__social-item"><a href=""> <img src="images/footer/vk.svg" alt="alt"/></a></li>
+            <li class="cabinet-footer__social-item"><a href=""> <img src="images/footer/facebook.svg" alt="alt"/></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </div>
+</html>
