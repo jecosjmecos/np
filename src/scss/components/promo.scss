@@ -1,0 +1,358 @@
+.promo {
+  position: relative;
+  padding: 146px 0 130px;
+  min-height: 800px;
+  background: url("../images/promo/shape.png") 570px bottom no-repeat,
+    url("../images/promo/prom.png") right center/1300px 100% no-repeat, #e9eff5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -785px;
+    display: block;
+    width: 350px;
+    height: 935px;
+    background: url("../images/training/circles.png") no-repeat;
+  }
+
+  &__title {
+    max-width: 520px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__subtitle {
+    position: relative;
+    padding-left: 80px;
+    max-width: 500px;
+    margin-bottom: 68px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -14px;
+      width: 70px;
+      height: 70px;
+      background: url("../images/promo/rocket.png") center center/cover
+        no-repeat;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto 34px;
+    &:last-child {
+      margin: 0 auto;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+
+  &__kurs {
+    margin-left: 30px;
+  }
+
+  &__kurs-title {
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 120%;
+    color: rgb(15, 15, 15);
+  }
+
+  &__free-title {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0 10px;
+    flex: 0 1 250px;
+    font-weight: 500;
+    color: #fff;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -23px;
+      left: 10px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #fae80b;
+      box-shadow: inset 0 0 0 4px #fae80b, inset 0 0 0 6px #3787e3;
+    }
+  }
+}
+
+@media (max-width: 1919.98px) {
+  .promo {
+    background: url("../images/promo/shape.png") 300px bottom no-repeat,
+      url("../images/promo/prom.png") right center/1160px 100% no-repeat,
+      #e9eff5;
+
+    &__title {
+      max-width: 610px;
+      span {
+        color: darkblue;
+      }
+    }
+
+    &__kurs {
+      margin-left: 0;
+    }
+
+    &__btn {
+      border: 1px solid darkblue;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .promo {
+    background: url("../images/promo/shape.png") 200px bottom no-repeat,
+      url("../images/promo/prom.png") right center/1100px 100% no-repeat,
+      #e9eff5;
+
+    &__title {
+      margin-bottom: 50px;
+      max-width: 450px;
+      font-size: 51px;
+      line-height: 120%;
+    }
+
+    &__subtitle {
+      max-width: 400px;
+      &::before {
+        top: 0;
+      }
+    }
+
+    &__item {
+      flex: 0 1 220px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .promo {
+    background: url("../images/promo/prom.png") right center/cover no-repeat,
+      #e9eff5;
+
+    &__title {
+      margin: 0 0 50px auto;
+      color: #fff;
+      text-align: right;
+      & span {
+        color: #fff;
+      }
+    }
+
+    &__subtitle {
+      margin: 0 0 60px auto;
+      padding: 20px 10px 20px 90px;
+      min-height: 80px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      &::before {
+        top: 20px;
+        left: 5px;
+      }
+    }
+
+    &__wrapper {
+      flex-direction: row-reverse;
+    }
+
+    &__kurs-title {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .promo {
+    background: url(../images/promo/prom.png) left center no-repeat, #e9eff5;
+
+    &__title {
+      margin: 0 auto 50px 0;
+      text-align: left;
+      color: #000;
+      & span {
+        color: darkblue;
+      }
+    }
+
+    &__subtitle {
+      margin: 0 auto 60px 0;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+    }
+
+    &__kurs-title {
+      color: #000;
+    }
+
+    &__item {
+      color: #000;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .promo {
+    background: url(../images/promo/prom.png) center center/cover no-repeat,
+      #e9eff5;
+    &::before {
+      display: none;
+    }
+
+    &__title {
+      margin: 0 0 50px auto;
+      font-size: 45px;
+      color: #fff;
+      text-align: right;
+
+      & span {
+        color: #fff;
+      }
+    }
+
+    &__subtitle {
+      margin: 0 0 50px auto;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__kurs-title {
+      text-align: right;
+      color: #fff;
+    }
+
+    &__btn {
+      margin: 0 0 50px auto;
+      &:last-child {
+        margin: 0 0 50px auto;
+      }
+    }
+
+    &__kurs {
+      margin-bottom: 30px;
+    }
+
+    &__free {
+      &-title {
+        text-align: right;
+      }
+      & button {
+        margin: 0 0 0 auto;
+      }
+    }
+
+    &__items {
+      margin: 0 0 0 auto;
+      flex-direction: column;
+      width: 450px;
+    }
+
+    &__item {
+      flex: none;
+      margin-bottom: 15px;
+      padding: 0 10px 0 25px;
+      color: #fff;
+      &::before {
+        top: 0;
+        left: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .promo {
+    padding: 100px 0 0;
+    background: url("../images/person/person.png") center top 200px/320px
+        no-repeat,
+      url("../images/promo/slice.png") right top / 130% 100% no-repeat, #e9eff5;
+    &__title {
+      margin: 0 0 320px auto;
+      text-align: right;
+      font-size: 32px;
+      color: #000;
+      & span {
+        color: darkblue;
+      }
+    }
+
+    &__subtitle {
+      background: linear-gradient(
+        to top,
+        rgba(55, 135, 227, 0.4) 0%,
+        rgba(255, 255, 255, 0.8) 100%
+      );
+      margin: 0 auto 50px;
+      font-weight: 600;
+    }
+
+    &__kurs-title {
+      color: #000;
+      text-align: center;
+    }
+
+    &__btn {
+      margin: 0 auto 50px;
+      &:last-child {
+        margin: 0 auto;
+      }
+    }
+
+    &__free-title {
+      color: #000;
+      text-align: center;
+    }
+
+    &__free button {
+      margin: 0 auto;
+    }
+
+    &__items {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &__item {
+      color: #000;
+    }
+  }
+}

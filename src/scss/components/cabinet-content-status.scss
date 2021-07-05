@@ -1,0 +1,178 @@
+.cabinet-content__status {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  @media screen and (max-width: 1699px) {
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+  &-bugs {
+    padding: 32px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 25%;
+    @media screen and (max-width: 1699px) {
+      width: 38%;
+    }
+
+    .cabinet__btn {
+      width: 195px;
+    }
+
+    .available {
+      margin-bottom: 24px;
+      color: $color3;
+      font-size: 16px;
+    }
+  }
+
+  &-statistics {
+    width: 50%;
+    background: #fff;
+    margin: 0 30px 30px;
+    padding: 32px;
+    @media screen and (max-width: 1699px) {
+      width: 58%;
+      margin: 0 0 30px;
+    }
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
+    .cabinet__block-title {
+      margin-bottom: 16px;
+    }
+
+    .period {
+      .period__date {
+        margin-bottom: 6px;
+        display: inline-block;
+        input {
+          color: $color4;
+          padding: 6px 17px 6px 20px;
+          border-radius: 50px;
+          font-size: 13px;
+          background: #f4f8fc;
+          outline: none;
+          height: 27px;
+          width: 150px;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+          //color: rgba(0, 0, 0, 0);
+          opacity: 1;
+          display: block;
+          background: url(../images/cabinet/calendar.svg) no-repeat center/100%;
+          width: 14px;
+          height: 14px;
+          border-width: thin;
+        }
+      }
+      b {
+        font-weight: 400;
+        padding: 0 4px;
+      }
+    }
+
+    .prompt {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 7px;
+        line-height: 15px;
+        padding-left: 27px;
+        position: relative;
+        &:before {
+          content: "";
+          height: 15px;
+          width: 15px;
+          border-radius: 50px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &.prompt__done:before {
+          background: $color1;
+        }
+        &.prompt__wrong:before {
+          background: $yellow;
+        }
+      }
+    }
+
+    &-diagram {
+    }
+  }
+
+  &-raiting {
+    width: 25%;
+    margin-bottom: 30px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 1699px) {
+      width: 100%;
+    }
+    .cabinet__block-title {
+      padding: 32px 32px 0;
+    }
+    .position {
+      padding: 0 32px 32px;
+      color: $color3;
+      font-size: 16px;
+      b {
+        color: $orange;
+        font-weight: 700;
+      }
+    }
+    .raiting {
+      padding: 0;
+      margin: 0 0 30px;
+      width: 100%;
+      li {
+        list-style-type: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        padding: 0 32px;
+        div {
+          padding: 8px 0;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(171, 178, 185, 0.3);
+          b {
+            font-weight: 700;
+          }
+        }
+        &.raiting-current {
+          background: rgba(255, 234, 6, 0.21);
+          div {
+            border-bottom: none;
+            b {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+    .link {
+      display: inline-flex;
+      padding: 0 32px 32px;
+      a {
+        color: $color1;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

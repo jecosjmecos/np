@@ -1,0 +1,59 @@
+.cabinet-footer {
+  padding: 21px 30px 21px 128px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 1549px) {
+    padding: 21px 30px;
+  }
+  &__phones {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: $bl;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      padding: 3px 0;
+    }
+  }
+  &__nav {
+    padding: 0;
+    margin: 0 0 0 135px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1549px) {
+      margin: 0;
+    }
+    &-item {
+      list-style-type: none;
+      padding: 0 36px;
+      text-align: center;
+      @media screen and (max-width: 1699px) {
+        padding: 0 15px;
+      }
+      a {
+        font-size: 14px;
+        color: $bl;
+      }
+    }
+  }
+  &__social {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    &-item {
+      list-style-type: none;
+      margin-left: 25px;
+      @media screen and (max-width: 1699px) {
+        margin-left: 15px;
+      }
+      a {
+        height: 24px;
+        width: 24px;
+        display: block;
+      }
+    }
+  }
+}

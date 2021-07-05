@@ -1,0 +1,53 @@
+.cabinet-content__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  &-user {
+    .link {
+      display: flex;
+      align-items: center;
+      color: $bl;
+      font-weight: 500;
+      font-size: 24px;
+      @media screen and (max-width: 1399px) {
+        font-size: 20px;
+      }
+    }
+    .avatar {
+      margin-right: 24px;
+      background: #f1c299;
+      overflow: hidden;
+      border-radius: 50px;
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-result {
+    display: flex;
+    .tasks {
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 80px;
+      @media screen and (max-width: 1399px) {
+        margin-left: 30px;
+        font-size: 16px;
+      }
+      span {
+        padding-left: 12px;
+      }
+      &.performed {
+        span {
+          color: #219653;
+        }
+      }
+      &.not-performed {
+        span {
+          color: $red;
+        }
+      }
+    }
+  }
+}

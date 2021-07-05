@@ -1,0 +1,159 @@
+.faq {
+  padding: 60px 0 75px;
+  background: url("../images/FAQ/bg.png") left bottom/100% 65% no-repeat,
+    #e9eff5;
+
+  &__title-faq {
+    margin-bottom: 25px;
+  }
+
+  &__title-reviews {
+    margin-bottom: 102px;
+  }
+
+  &__tabs {
+    max-width: 1500px;
+    margin: 0 auto 102px;
+  }
+
+  &__tab {
+    background-color: #fff;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    &[open] {
+      & .faq__tab-title::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        background: url("../images/FAQ/arrow.png") center no-repeat;
+        transform: rotate(90deg) translateY(0) translateX(-50%);
+        transition: all 0.3s linear;
+      }
+    }
+  }
+
+  &__tab-title {
+    padding: 0 70px;
+    min-height: 78px;
+    font-size: 20px;
+    line-height: 120%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("../images/FAQ/arrow.png") center no-repeat;
+      transition: all 0.3s linear;
+    }
+  }
+
+  &__tab-text {
+    padding: 10px 70px;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex: 0 1 31%;
+    list-style: none;
+  }
+
+  &__image {
+    margin-bottom: 30px;
+    background: url("../images/FAQ/star5.png") right 20px bottom no-repeat;
+  }
+
+  &__img {
+    width: 135px;
+    height: 135px;
+    margin-bottom: 12px;
+  }
+
+  &__image-descr {
+    display: inline-block;
+    width: 135px;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__text {
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 0 0 auto;
+    background-color: #c5daf2;
+    border-radius: 10px;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .faq {
+    &__image {
+      min-height: 220px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .faq {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex: 0 1 49%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .faq {
+    padding: 50px 0;
+    background: url(../images/FAQ/bg.png) left bottom no-repeat, #e9eff5;
+
+    &__tabs {
+      margin-bottom: 50px;
+    }
+
+    &__tab-text {
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+
+    &__title-reviews {
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      flex: none;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

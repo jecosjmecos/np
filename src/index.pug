@@ -1,0 +1,258 @@
+doctype html
+html(lang='ru')
+	include modules/head
+
+	body
+		header.header
+			.container
+				div(class='header__wrapper')
+					div(class='header__logo')
+						a(href='#')
+							img(src='images/header/logo.png' alt='logo')
+					nav(class='header__nav')
+						ul(class='header__list')
+							li(class='header__item')
+								a(href='#comment') О нас
+							li(class='header__item')
+								a(href='#cool') Преимущества
+							li(class='header__item')
+								a(href='#persons') Преподаватели
+							li(class='header__item')
+								a(href='#cost') Стоимость
+							li(class='header__item')
+								a(href='#soursec') FAQ
+					button(class='header__burger')
+						span.visually-hidden burger
+		main
+			section.promo
+				.container
+					h1(class='title promo__title')
+						span Сдай экзамены
+						| на 100 баллов
+					p(class='promo__subtitle')
+						| Наша платформа поможет тебе это сделать. Начинай прямо сейчас
+						| БЕСПЛАТНО
+					div(class='promo__wrapper')
+						div(class='promo__kurs')
+							p(class='promo__kurs-title') Наши курсы
+							button(class='button promo__btn') Математика
+							button(class='button button_bgy promo__btn')
+								| Английский язык
+						div(class='promo__free')
+							p(class='promo__free-title') бесплатный урок
+							button(class='button button_bgy button_fz25') записаться
+					ul(class='promo__items')
+						li(class='promo__item')
+							| Ты будешь учиться у обладателя премии «Репетитор года» от Profi.ru
+						li(class='promo__item')
+							| Игровая форма обучения сделает подготовку интересной
+						li(class='promo__item')
+							| Ты научишься решать любую задачу экзамена
+			section#cost.training
+				.container
+					h2(class='title training__title') формат обучения
+					ul(class='training__items')
+						li(class='training__item')
+							article.cart
+								div(class='cart__img')
+									img(src='images/training/cart-1.png' alt='img')
+								h4(class='cart__title') Групповые занятия онлайн
+								p(class='cart__descr')
+									| Занятия в группе до 8 человек, 8 занятий в месяц
+								button(class='button button_cart') 3 500₽
+						li(class='training__item')
+							article.cart
+								div(class='cart__img')
+									img(src='images/training/cart-2.png' alt='img')
+								h4(class='cart__title') Индивидуальные занятия
+								p(class='cart__descr')
+									| Индивидуальный подход к каждому ученику
+								button(class='button button_cart') 1 200₽
+						li(class='training__item')
+							article.cart
+								div(class='cart__img')
+									img(src='images/training/cart-3.png' alt='img')
+								h4(class='cart__title') Видео-уроки
+								p(class='cart__descr')
+									| 1 и 2 часть ЕГЭ в видео-формате. Можно посмотреть в любое
+									| время любое количество раз. Будет с вами до самого экзамена!
+								button(class='button button_cart') 0 000₽
+			section#persons.person
+				.container
+					div(class='person__wrapper')
+						div(class='person__img')
+							img(src='images/person/person.png' alt='img')
+						div(class='person__content')
+							h2(class='title person__title') наталья понамарева
+							h3(class='person__subtitle') преподаватель по математике
+							ul(class='person__items')
+								li(class='person__item') кандидат технических наук
+								li(class='person__item') победитель многочисленных олимпиад
+								li(class='person__item')
+									| обладатель премии репетитор года - 2014
+								li(class='person__item')
+									| Лицензия на образовательную деятельность
+								li(class='person__item')
+									| Лицензированный эксперт по проверке ЕГЭ по математике
+					ul(class='person__list')
+						li
+							span 12
+							p лет опыта подготовки к егэ
+						li
+							span 99%
+							p подготовленных учеников
+						li
+							span 80%
+							p учеников набрали более 80 баллов
+						li
+							span 42
+							p различных дипломов и наград
+			section.platform
+				.container
+					h2(class='title platform__title') об образовательной платформе
+					ul(class='platform__list')
+						li(class='platform__item')
+							| 1082 уникальных автоматизированных упражнений
+						li(class='platform__item')
+							| увлекательная структура заданий будет поддерживать интерес
+						li(class='platform__item')
+							| бонусы , бесплатные вебинары и дополнительные видеоуроки
+			section#cool.advantages
+				.container
+					h2(class='title advantages__title') наши преимущества
+					ul(class='advantages__list')
+						li(class='advantages__item')
+							div(class='advantages__img')
+								img(src='images/advantages/img1.png' alt='img')
+							p(class='advantages__text')
+								| Занимайтесь в удобное для вас время и тут жезадавайте вопросы
+								| преподавателю.
+						li(class='advantages__item')
+							div(class='advantages__img')
+								img(src='images/advantages/img2.png' alt='img')
+							p(class='advantages__text')
+								| Все любят играть и соревноваться. Мы это используем для
+								| повышения интереса к учебе.
+						li(class='advantages__item')
+							div(class='advantages__img')
+								img(src='images/advantages/img3.png' alt='img')
+							p(class='advantages__text')
+								| Благодаря автоматизации большей части процесса обучения, мы
+								| можем предложить низкую цену при высоком качестве.
+			section#soursec.faq
+				.container
+					h2(class='title faq__title-faq') faq
+					div(class='faq__tabs')
+						details(class='faq__tab')
+							summary(class='faq__tab-title')
+								| Lorem ipsum dolor sit amet.
+							p(class='faq__tab-text')
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+								| quas porro sunt rerum sapiente accusamus libero veritatis optio
+								| illum ea id, possimus corporis architecto aspernatur ratione
+								| ullam harum maiores excepturi?
+						details(class='faq__tab')
+							summary(class='faq__tab-title')
+								| Lorem ipsum dolor sit amet.
+							p(class='faq__tab-text')
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+								| quas porro sunt rerum sapiente accusamus libero veritatis optio
+								| illum ea id, possimus corporis architecto aspernatur ratione
+								| ullam harum maiores excepturi?
+						details(class='faq__tab')
+							summary(class='faq__tab-title')
+								| Lorem ipsum dolor sit amet.
+							p(class='faq__tab-text')
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+								| quas porro sunt rerum sapiente accusamus libero veritatis optio
+								| illum ea id, possimus corporis architecto aspernatur ratione
+								| ullam harum maiores excepturi?
+						details(class='faq__tab')
+							summary(class='faq__tab-title')
+								| Lorem ipsum dolor sit amet.
+							p(class='faq__tab-text')
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+								| quas porro sunt rerum sapiente accusamus libero veritatis optio
+								| illum ea id, possimus corporis architecto aspernatur ratione
+								| ullam harum maiores excepturi?
+					h2#comment(class='title faq__title-reviews') отзывы
+					ul(class='faq__list')
+						li(class='faq__item')
+							figure(class='faq__image')
+								p(class='faq__img')
+									img(src='images/FAQ/girl.png' alt='img')
+								figcaption(class='faq__image-descr') ольга б.
+							p(class='faq__text')
+								| Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+								| voluptatibus repudiandae asperiores aut nostrum labore possimus
+								| fuga impedit, officia quisquam consequuntur quo aspernatur
+								| laboriosam reiciendis numquam cum iure velit cupiditate.
+						li(class='faq__item')
+							figure(class='faq__image')
+								p(class='faq__img')
+									img(src='images/FAQ/girl.png' alt='img')
+								figcaption(class='faq__image-descr') Ольга Б.
+							p(class='faq__text')
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
+								| optio animi soluta dignissimos iure natus pariatur neque,
+								| dolores iste doloremque asperiores nam repellat voluptatum
+								| dolorem laborum recusandae voluptatem. Commodi, quas.
+						li(class='faq__item')
+							figure(class='faq__image')
+								p(class='faq__img')
+									img(src='images/FAQ/girl.png' alt='img')
+								figcaption(class='faq__image-descr') Ольга Б.
+							p(class='faq__text')
+								| Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								| Provident sapiente voluptas possimus quae nemo dolores
+								| aspernatur ab consectetur repudiandae earum quod accusamus
+								| tempore, commodi perferendis eveniet labore itaque rerum porro!
+			.popup
+				div(class='popup__container')
+					div(class='popup__close-wrapper')
+						div(class='popup__close')
+					nav(class='popup__menu')
+						ul(class='popup__items')
+							li(class='popup__item')
+								a(href='#comment') О нас
+							li(class='popup__item')
+								a(href='#cool') Преимущества
+							li(class='popup__item')
+								a(href='#persons') Преподаватели
+							li(class='popup__item')
+								a(href='#cost') Стоимость
+							li(class='popup__item')
+								a(href='#soursec') FAQ
+		footer.footer
+			.container
+				div(class='footer__wrapper')
+					div(class='footer__logo')
+						a(href='#' class='footer__link-logo')
+							img(src='images/header/logo.png' alt='logo')
+					ul(class='footer__list')
+						li(class='footer__list-item')
+							a(href='tel:+79299713718') +7 (929) 971-37-18
+						li(class='footer__list-item')
+							a(href='tel:+79299713718') +7 (929) 971-37-18
+					ul(class='footer__items')
+						li(class='footer__item')
+							a(href='#') Связаться с преподавателем
+						li(class='footer__item')
+							a(href='#') Договор оферты
+						li(class='footer__item')
+							a(href='#') Политика конфиденциальности
+					ul(class='footer__socials')
+						li(class='footer__socials-item')
+							a(href='#' class='footer__link-social')
+								img(src='images/footer/telegram.svg' alt='social')
+						li(class='footer__socials-item')
+							a(href='#' class='footer__link-social')
+								img(src='images/footer/insta.svg' alt='social')
+						li(class='footer__socials-item')
+							a(href='#' class='footer__link-social')
+								img(src='images/footer/vk.svg' alt='social')
+						li(class='footer__socials-item')
+							a(href='#' class='footer__link-social')
+								img(src='images/footer/facebook.svg' alt='social')
+
+		script(src='js/main.js')

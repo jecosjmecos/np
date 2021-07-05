@@ -1,0 +1,40 @@
+html(lang='ru')
+	include modules/head
+
+	body
+		.registration-container
+			.registration-content-container
+				.registration-content
+					.registration-content_top
+						a(href="#")
+							img(src="images/header/logo.png" alt="alt")
+					.registration-content_text
+						h1.title Добро пожаловать <br> на обучающий портал!
+						.undertitle Задание ЕГЭ №11. Средняя скорость. Движение по прямой.<br> Движение по воде. Движение по кругу.
+					.registration-content_form
+						.registration-content_form__switch
+							button.active  Войти
+							span /
+							button Зарегистрироваться
+						form(action="" method="method")
+							.form_input
+								img.icon(src="images/form/mail.svg" alt="alt")
+								input(type="text" placeholder="Ваша почта")
+								.form_input-error Текст ошибки
+							.form_input.form_pass
+								img.icon(src="images/form/pass.svg" alt="alt")
+								input(type="password" placeholder="Введите пароль")
+								.form_input-error Текст ошибки
+								button.view-pass
+									img(src="images/form/showpass.svg" alt="alt")
+							.form_button 
+								.btn
+									input.submit.site-btn(type="submit" value="Войти")
+								.forgot-password
+									a(href="#") Забыли пароль?
+
+
+			.registration-banner(style="background: url(images/registration/registration-banner.jpg) no-repeat center/cover")
+
+		script(src='js/jquery-3.3.1.min.js')
+		script(src='js/main.js')

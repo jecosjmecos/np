@@ -1,0 +1,111 @@
+.registration-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.registration-content-container {
+  width: 50vw;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+}
+
+.registration-content {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+  &_top {
+    padding-top: 40px;
+    margin-bottom: 76px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+      width: auto;
+      margin-right: 16px;
+    }
+  }
+  &_text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 76px;
+    @media screen and (max-width: 1599px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+    h1 {
+      font-size: 53px;
+      font-weight: 400;
+      line-height: 1.5em;
+      text-align: left;
+      margin-bottom: 16px;
+      @media screen and (max-width: 1399px) {
+        font-size: 45px;
+      }
+      @media screen and (max-width: 1199px) {
+        text-align: center;
+        font-size: 35px;
+      }
+    }
+  }
+  &_form {
+    form {
+      width: 430px;
+      max-width: 100%;
+      padding-bottom: 100px;
+      @media screen and (max-width: 1199px) {
+        margin: 0 auto;
+      }
+    }
+    &__switch {
+      font-size: 30px;
+      margin-bottom: 54px;
+      @media screen and (max-width: 1599px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (max-width: 1199px) {
+        width: 430px;
+        max-width: 100%;
+        margin: 0 auto 30px;
+      }
+      button {
+        font-size: 30px;
+        background: transparent;
+        color: $bl;
+        opacity: 0.5;
+        &.active {
+          opacity: 1;
+        }
+      }
+      span {
+        color: $bl;
+        opacity: 0.5;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+.registration-banner {
+  width: 50vw;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.1;
+  }
+}

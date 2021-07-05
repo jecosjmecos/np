@@ -1,0 +1,45 @@
+.cabinet-content__await {
+  &-item {
+    padding: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media screen and (max-width: 1399px) {
+      flex-wrap: wrap;
+    }
+    .name {
+      width: 30%;
+      @media screen and (max-width: 1499px) {
+        width: 50%;
+      }
+      &__title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 4px;
+      }
+      &__start {
+        font-size: 16px;
+        font-weight: 500;
+        color: $color3;
+        span {
+          color: $red;
+        }
+      }
+    }
+    .info {
+      width: 40%;
+      @media screen and (max-width: 1499px) {
+        width: 50%;
+      }
+    }
+    .btn {
+      width: 208px;
+      margin-left: auto;
+      @media screen and (max-width: 1499px) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

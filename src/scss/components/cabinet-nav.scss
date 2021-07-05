@@ -1,0 +1,59 @@
+.cabinet-nav {
+  width: 345px;
+  min-width: 345px;
+  border-right: 1px solid $bg;
+  @media screen and (max-width: 1599px) {
+    min-width: 300px;
+    width: 300px;
+  }
+  @media screen and (max-width: 1399px) {
+    min-width: 250px;
+    width: 250px;
+  }
+  &__content {
+    position: sticky;
+    top: 0;
+  }
+  &__logo {
+    padding: 15px 30px 30px;
+    a {
+      display: inline-block;
+    }
+  }
+  &__menu {
+  }
+  &__item {
+    a {
+      height: 79px;
+      display: flex;
+      align-items: center;
+      padding-left: 70px;
+      border-left: 2px solid transparent;
+      text-transform: uppercase;
+      color: $bl;
+      font-size: 16px;
+      font-weight: 500;
+      @media screen and (max-width: 1599px) {
+        height: 70px;
+        padding-left: 30px;
+      }
+      @media screen and (max-width: 1399px) {
+        height: 60px;
+      }
+      &:hover {
+        background: $bg;
+      }
+    }
+    &_current {
+      a {
+        background: $blue;
+        border-left: 2px solid $yellow;
+        color: #fff;
+        &:hover {
+          background: $blue;
+          border-left: 2px solid $yellow;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+.person {
+  position: relative;
+  padding: 90px 0 50px;
+  background: url("../images/person/Shape.png") right 40px top no-repeat,
+    #e9eff5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 130%;
+    background: url("../images/person/bg.png") right bottom/100% 100% no-repeat;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    flex: 0 1 740px;
+    z-index: 2;
+    min-height: 790px;
+  }
+
+  &__content {
+    z-index: 2;
+    flex: 0 1 55%;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  &__subtitle {
+    margin-bottom: 130px;
+    font-size: 39px;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 130%;
+  }
+
+  &__item {
+    padding-left: 45px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    list-style: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #3787e3;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    position: relative;
+    z-index: 100;
+    padding: 30px 70px;
+    max-width: 1580px;
+    margin: -100px auto 0;
+    background-color: #fff;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      padding: 0 5px;
+      flex: 0 1 330px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      & span {
+        margin-right: 10px;
+        font-size: 60px;
+        font-weight: 600;
+        color: #3787e3;
+      }
+
+      & p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 110%;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 1919.98px) {
+  .person {
+    &__subtitle {
+      font-size: 37px;
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      font-size: 25px;
+    }
+
+    &__list {
+      padding: 30px 50px;
+      & li {
+        & span {
+          font-size: 55px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .person {
+    &__img {
+      img {
+        object-fit: contain;
+      }
+    }
+
+    &__list {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .person {
+    background: url(../images/person/Shape.png) right 40px top no-repeat,
+      #e9eff5;
+    &::before {
+      display: none;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__img {
+      flex: none;
+      margin-bottom: 30px;
+      min-height: 0;
+      height: 500px;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    &__content {
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+      & li {
+        padding: 10px 10px;
+        flex: 0 1 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .person {
+    &__list {
+      & li {
+        & span {
+          font-size: 40px;
+        }
+        & p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .person {
+    &__list {
+      padding: 20px;
+      & li {
+        padding: 0;
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        & span {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .person {
+    padding: 50px 0;
+    background: url(../images/person/Shape.png) left top no-repeat, #e9eff5;
+
+    &__img {
+      height: 270px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+
+    &__item {
+      font-size: 15px;
+    }
+
+    &__list {
+      padding: 20px;
+      & li {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.button {
+  padding: 14px 40px;
+  display: block;
+  background-color: #3787e3;
+  border-radius: 32px;
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &_bgy {
+    background-color: #ffea06;
+  }
+
+  &_fz25 {
+    font-size: 25px;
+  }
+
+  &_cart {
+    padding: 25px 23px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      -107deg,
+      rgb(0, 169, 235) 0%,
+      rgb(0, 91, 231) 99%
+    );
+    font-size: 47px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .button {
+    &_cart {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .button {
+    font-size: 25px;
+  }
+}

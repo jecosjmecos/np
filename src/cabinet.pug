@@ -1,0 +1,22 @@
+- var pageTitle = "Личный кабинет";
+
+html(lang='ru')
+	include modules/head
+
+	body
+	.cabinet
+		.cabinet-wrapper
+			include modules/cabinet-nav
+
+			.cabinet-main
+				include modules/cabinet-header
+
+				include modules/cabinet-content
+
+				include modules/cabinet-footer
+
+
+
+		script(src='js/jquery-3.3.1.min.js')
+		script(src='js/slick.min.js')
+		script(src='js/main.js')

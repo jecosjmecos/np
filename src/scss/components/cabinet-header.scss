@@ -1,0 +1,121 @@
+.cabinet-header {
+  padding: 15px 30px 15px 128px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media screen and (max-width: 1549px) {
+    padding: 15px 30px;
+  }
+  &__payment {
+    display: flex;
+  }
+  &__payment-select {
+    margin-right: 24px;
+    position: relative;
+    &:before {
+      content: "";
+      height: 23px;
+      width: 23px;
+      position: absolute;
+      top: 15px;
+      right: 14px;
+      background: url(../images/header/select-app.png) no-repeat center/100%;
+      pointer-events: none;
+      @media screen and (max-width: 1399px) {
+        top: 8px;
+      }
+    }
+    select {
+      background: $bg;
+      outline: none;
+      cursor: pointer;
+      height: 50px;
+      width: 320px;
+      padding: 0 40px 0 24px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      @media screen and (max-width: 1399px) {
+        height: 40px;
+        width: 250px;
+        padding: 0 40px 0 15px;
+      }
+    }
+  }
+  &__payment-button {
+    height: 50px;
+    width: 135px;
+    color: $bl;
+    background: $yellow;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    @media screen and (max-width: 1399px) {
+      height: 40px;
+    }
+  }
+  &__account {
+    display: flex;
+    align-items: center;
+    &-notifications {
+      margin-right: 61px;
+      a {
+        display: flex;
+        align-items: center;
+        color: $red;
+        font-size: 14px;
+        font-weight: 500;
+        .ring {
+          margin-right: 6px;
+          position: relative;
+          &:after {
+            content: "";
+            height: 12px;
+            width: 12px;
+            border: 2px solid #fff;
+            background: $red;
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            z-index: 1;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+    &-profile {
+      display: flex;
+      align-items: center;
+      .avatar {
+        background: #f1c299;
+        display: block;
+        height: 40px;
+        width: 40px;
+        overflow: hidden;
+        border-radius: 50px;
+        margin-right: 16px;
+        img {
+          object-fit: cover;
+        }
+      }
+      .exit {
+        color: $color3;
+        font-size: 14px;
+        line-height: 16px;
+        position: relative;
+        &:before {
+          content: "";
+          height: 1px;
+          width: 100%;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          background: $color3;
+        }
+        &:hover:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
