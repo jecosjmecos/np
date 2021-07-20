@@ -1,5 +1,21 @@
 $(document).ready(function () {
   /*
+  * Cabinet header
+  */
+    $('#cabinetBurger').click(function(){
+      $.fancybox.open({
+        src: '#cabinetNav',
+        smallBtn: false,
+        toolbar: false,
+        baseClass: 'fancybox-cabinet-menu',
+        animationEffect   : 'slide-in-out',
+        animationDuration : 600,
+      });
+    });
+  /*
+  * Cabinet header end
+  */
+  /*
   * Registration page
   */
     $('.registration-content_form__switch button').click(function(){
@@ -43,17 +59,22 @@ $(document).ready(function () {
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 1000,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 3,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 577,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        autoHeight: true
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -67,6 +88,18 @@ $(document).ready(function () {
 
   /*
   * Cabinet page end
+  */
+
+  /*
+  * Checkout page
+  */
+ $('a.payment-checkout__all .payment-checkout__item-container').click(function(){
+  $('a.payment-checkout__item-container').parents('.payment-checkout__item').removeClass('active');
+  $(this).parents('.payment-checkout__item').addClass('active');
+ });
+ 
+ /*
+  * Checkout page end
   */
 });
 
